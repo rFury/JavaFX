@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPane" prefHeight="582.0" prefWidth="887.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hellofx.SecondeApp.Controllers.TicketController">
+   <children>
+        <TableView fx:id="ticketTableView" layoutX="13.0" layoutY="148.0" prefHeight="384.0" prefWidth="861.0">
+            <columns>
+                <TableColumn fx:id="TicketID" prefWidth="95.0" text="Ticket ID" />
+                <TableColumn fx:id="LicenseNumber" prefWidth="120.0" text="License Number" />
+                <TableColumn fx:id="Speed" prefWidth="75.0" text="Speed" />
+                <TableColumn fx:id="OfficerID" prefWidth="75.0" text="Officer ID" />
+                <TableColumn fx:id="CarLicensePlate" prefWidth="150.0" text="Car License Plate" />
+                <TableColumn fx:id="isOver80" prefWidth="75.0" text="Over 80" />
+                <TableColumn fx:id="isSuspended" prefWidth="75.0" text="Suspended" />
+                <TableColumn fx:id="Fine" prefWidth="75.0" text="Fine" />
+                <TableColumn fx:id="TicketDate" prefWidth="120.0" text="Ticket Date" />
+            </columns>
+        </TableView>
+      <TextField fx:id="searchField" layoutX="657.0" layoutY="111.0" promptText="Enter search query" />
+      <Button fx:id="searchButton" layoutX="813.0" layoutY="109.0" mnemonicParsing="false" onAction="#Search" prefHeight="11.0" prefWidth="61.0" style="-fx-background-color: #007bff; -fx-text-fill: white; -fx-font-size: 14px;" text="Search" />
+      <Label layoutX="400.0" layoutY="52.0" text="Tickets">
+         <font>
+            <Font name="Lucida Sans Demibold Italic" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="importButton" layoutX="14.0" layoutY="539.0" mnemonicParsing="false" onAction="#goBack" prefHeight="29.0" prefWidth="130.0" style="-fx-background-color: #007bff; -fx-text-fill: white; -fx-font-size: 14px;" text="Tickets Payment" />
+   </children>
+</AnchorPane>

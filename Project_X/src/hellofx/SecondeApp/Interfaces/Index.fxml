@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPane" prefHeight="582.0" prefWidth="912.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hellofx.SecondeApp.Controllers.TicketPaymentController">
+   <children>
+        <TableView fx:id="ticketTableView" layoutX="126.0" layoutY="136.0" prefHeight="384.0" prefWidth="710.0">
+            <columns>
+                <TableColumn fx:id="first_NameColumn" prefWidth="84.5" text="First Name" />
+                <TableColumn fx:id="last_NameColumn" prefWidth="88.5" text="Last Name" />
+                <TableColumn fx:id="licenseNumberColumn" prefWidth="120.0" text="License Number" />
+                <TableColumn fx:id="idColumn" prefWidth="95.0" text="ID" />
+                <TableColumn fx:id="licenseDateColumn" prefWidth="129.0" text="License Date" />
+                <TableColumn fx:id="ticketsColumn" prefWidth="182.5" text="Tickets" />
+            </columns>
+        </TableView>
+      <TextField fx:id="searchField" layoutX="687.0" layoutY="109.0" promptText="Enter search query" />
+      <Button fx:id="searchButton" layoutX="838.0" layoutY="107.0" mnemonicParsing="false" onAction="#Search" prefHeight="11.0" prefWidth="61.0" style="-fx-background-color: #007bff; -fx-text-fill: white; -fx-font-size: 14px;" text="Search" />
+      <Label layoutX="380.0" layoutY="53.0" text="Tickets Payment">
+         <font>
+            <Font name="Lucida Sans Demibold Italic" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="importButton" layoutX="5.0" layoutY="291.0" mnemonicParsing="false" onAction="#importTickets" prefHeight="29.0" prefWidth="112.0" style="-fx-background-color: #007bff; -fx-text-fill: white; -fx-font-size: 14px;" text="Import Tickets" />
+      <Button fx:id="payButton" layoutX="787.0" layoutY="539.0" mnemonicParsing="false" onAction="#payTicket" prefHeight="29.0" prefWidth="112.0" style="-fx-background-color: #007bff; -fx-text-fill: white; -fx-font-size: 14px;" text="Pay Ticket" />
+      <Button fx:id="exportButton" layoutX="1.0" layoutY="340.0" mnemonicParsing="false" onAction="#export" prefHeight="29.0" prefWidth="121.0" style="-fx-background-color: #007bff; -fx-text-fill: white; -fx-font-size: 14px;" text="Export Licenses" />
+      <Label fx:id="Ticketlabel" layoutX="5.0" layoutY="539.0" text="Ticket :" visible="false">
+         <font>
+            <Font name="Lucida Sans Demibold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="Finelabel" layoutX="582.0" layoutY="542.0" text="Fine :" visible="false">
+         <font>
+            <Font name="Lucida Sans Demibold Italic" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="hiddenTextField1" disable="true" layoutX="645.0" layoutY="541.0" prefHeight="25.0" prefWidth="128.0" visible="false" />
+      <TextField fx:id="hiddenTextField" disable="true" layoutX="81.0" layoutY="538.0" prefHeight="25.0" prefWidth="490.0" visible="false" />
+      <Button fx:id="importButton1" layoutX="6.0" layoutY="248.0" mnemonicParsing="false" onAction="#Tickets" prefHeight="29.0" prefWidth="112.0" style="-fx-background-color: #007bff; -fx-text-fill: white; -fx-font-size: 14px;" text="Tickets" />
+   </children>
+</AnchorPane>

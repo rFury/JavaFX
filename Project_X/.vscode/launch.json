@@ -1,0 +1,48 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "MySQLConnection",
+            "request": "launch",
+            "mainClass": "hellofx.Class.MySQLConnection",
+            "projectName": "Project_X_57ffb5d1"
+        },
+        {
+            "type": "java",
+            "name": "MainService",
+            "request": "launch",
+            "mainClass": "hellofx.Services.MainService",
+            "projectName": "Project_X_57ffb5d1"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "hellofx.Main",
+            "projectName": "Project_X_57ffb5d1",
+            "vmArgs": "--module-path \"C:/Users/youss/Downloads/openjfx-21.0.2_windows-x64_bin-sdk/javafx-sdk-21.0.2/lib\" --add-modules javafx.controls,javafx.fxml"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "hellofx.Main",
+            "projectName": "TP6_2c8a81b9",
+            "vmArgs": "--module-path \"C:/Users/youss/Downloads/openjfx-21.0.2_windows-x64_bin-sdk/javafx-sdk-21.0.2/lib\" --add-modules javafx.controls,javafx.fxml"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "hellofx.Main",
+            "projectName": "TP6_cce7fd2e"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        }
+    ]
+}
